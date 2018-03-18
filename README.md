@@ -1,2 +1,2 @@
-# static-page
+# static
 template for static page

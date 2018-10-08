@@ -1,0 +1,48 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 13;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.modal .modal-head {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+    .rex-icon {
+        font-size: 24px;
+        vertical-align: bottom;
+        cursor: pointer;
+    }
+}
+
+.modal .modal-ttl {
+    margin-bottom: 24px;
+    padding: 16px 0;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-top: 1px solid #828282;
+    border-bottom: 1px solid #828282;
+    background-color: #f9f9f9;
+}
+
+.modal .modal-inner {
+    padding: 0 8px;
+}
+
+.modal .btn {
+    width: 100%;
+    margin: 24px 0 32px;
+    box-sizing: border-box;
+}
+
+html[aria-hidden="true"],
+body[aria-hidden="true"] {
+  overflow: auto;
+  height: 100%;
+}

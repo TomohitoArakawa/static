@@ -1,0 +1,172 @@
+@charset 'utf-8';
+
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, MS-PGothic, sans-serif;
+  font-size: 1.6em;
+  line-height: 1.7;
+  min-width: 950px;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, pre, address, blockquote, table,
+ul, ol, dl, li, dt, dd, hr {
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+abbr, acronym, bdo, cite, code, dfn,
+em, img, kbd, q, samp, span, strong, sub, sup, var {
+  font-style: normal;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+strong {
+  font-weight: bold;
+}
+
+sub,
+sup {
+  font-size: 11px;
+  font-size: 1.1rem;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  top: 4px;
+}
+
+sup {
+  top: -4px;
+}
+
+a {
+  text-decoration: none;
+  color: #0033cc;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+img {
+  line-height: 1;
+  vertical-align: bottom;
+  border: none;
+}
+
+q {
+  quotes: none;
+}
+
+ins {
+  text-decoration: underline;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+label {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, MS-PGothic, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+input[type='image'],
+input.image {
+  border: none;
+}
+
+optgroup {
+  font-style: normal;
+}
+
+textarea {
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, MS-PGothic, sans-serif;
+  resize: none;
+  overflow: auto;
+}
+
+select {
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, MS-PGothic, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, MS-PGothic, sans-serif;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:active,
+button img {
+  position: relative;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+blockquote, div,ul, ol,
+dl, dt, dd, table, th, td,
+form, fieldset, legend, label {
+  zoom: 1;
+}
+
+ul li,
+ol li {
+  zoom: normal;
+}
+
+article, aside, dialog, figure, main,
+footer, header, hgroup, nav, section {
+  display: block;
+  zoom: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}

@@ -25,7 +25,7 @@ var isUA = (function(){
 /* modal */
 var modal = function() {
     //open
-    $('[data-trigger="modalOpen"]').on('click', function(){
+    $('[data-trigger="modalOpen"]').on('click', function() {
         var href = $(this).attr('href');
         var el = '<div class="modal" data-target="modal"></div>';
         $('body').append(el);
@@ -35,8 +35,12 @@ var modal = function() {
     });
     //close
     $(document).on('click', '[data-trigger="modalClose"]', function() {
-        $(this).parents('[data-target="modal"]').remove();
-        $('html , body').removeAttr('aria-hidden');
+        $.when(
+            $(this).parents('[data-target="modal"]').fadeOut(200)
+        ).done(function(){
+            $(this).parents('[data-target="modal"]').remove();
+            $('html , body').removeAttr('aria-hidden');
+        });
         return false;
     });
 }

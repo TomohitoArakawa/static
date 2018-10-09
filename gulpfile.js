@@ -15,8 +15,9 @@ gulp.task('browserSync', () => {
   browserSync({
     server: {
       baseDir: './',
-      index: '_index.html'
-    }
+      index: 'index.html'
+  },
+  open: 'external'
   });
 });
 

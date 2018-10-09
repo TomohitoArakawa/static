@@ -596,7 +596,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   white-space: nowrap;
   text-indent: 100%;
   border: none;
-  background: #069 url('/shared/img/ico_search_01.png') 50% 50% no-repeat;
+  // background: #069 url('/shared/img/ico_search_01.png') 50% 50% no-repeat;
 }
 #grpheader .rc-h-search-area .rc-h-search-btn:active {
   position: relative;
@@ -711,6 +711,7 @@ Icon classes can be used entirely standalone. They are named after their origina
     border-top: 1px solid #828282;
     border-bottom: 1px solid #828282;
     background: #fff;
+    box-sizing: border-box;
 }
 #grpheader .rc-h-gnavi .rc-h-inner {
   display: table;
@@ -736,7 +737,7 @@ Icon classes can be used entirely standalone. They are named after their origina
     display: block;
     content: "";
     width: 0;
-    height: 3px;
+    height: 1px;
     background-color: #b30000;
     transition: width .2s ease-out;
 }
@@ -746,6 +747,10 @@ Icon classes can be used entirely standalone. They are named after their origina
 #grpheader .rc-h-gnavi .rc-h-inner li:first-child a {
     width: auto;
     margin-left: 8px;
+    margin-right: 16px;
+}
+#grpheader .rc-h-gnavi .rc-h-inner li:first-child:hover a {
+    color: #828282;
 }
 #grpheader .rc-h-gnavi .rc-h-inner li:first-child a::after {
     display: none;
@@ -804,9 +809,9 @@ Icon classes can be used entirely standalone. They are named after their origina
 // #grpheader .rc-h-fixed-bar .rc-h-inner .rc-h-gnavi .rc-h-inner li {
 //   font-size: 108%;
 // }
-#grpheader .rc-h-fixed-bar .rc-h-inner .rc-h-gnavi .rc-h-inner li:first-child {
-  display: none;
-}
+// #grpheader .rc-h-fixed-bar .rc-h-inner .rc-h-gnavi .rc-h-inner li:first-child {
+//   display: none;
+// }
 #grpheader .rc-h-fixed-bar .rc-h-inner .rc-h-gnavi .rc-h-inner li a {
   color: #828282;
 }
@@ -850,7 +855,6 @@ Icon classes can be used entirely standalone. They are named after their origina
   border: 1px #828282 solid;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
   padding: 20px 50px 26px;
-  margin-top: -1px;
   display: none;
   box-sizing: border-box;
 }
@@ -1028,11 +1032,22 @@ Icon classes can be used entirely standalone. They are named after their origina
   display: block;
 }
 #grpheader .rc-h-fixed-bar .rc-h-inner .rc-h-gnavi .dropLink:hover .gnaviDropBox {
-  display: none;
+  display: block;
 }
-#grpheader .rc-h-gnavi .rc-h-inner li.dropLink:hover > a {
+#grpheader .rc-h-fixed-bar .rc-h-inner .rc-h-gnavi .rc-h-inner .gnaviDropBox_arrow {
+    width: 100%;
+    left: 0;
+}
+#grpheader .rc-h-gnavi .rc-h-inner li:hover > a {
+  color: #b30000;
   background: #fff;
   text-decoration: none;
+}
+#grpheader .rc-h-fixed-bar .rc-h-inner .rc-h-gnavi .rc-h-inner li:hover > a {
+    color: #b30000;
+}
+#grpheader .rc-h-fixed-bar .rc-h-inner .rc-h-gnavi .rc-h-inner li:first-child:hover > a {
+    color: #828282;
 }
 
 /* for JS */

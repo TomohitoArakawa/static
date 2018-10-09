@@ -7,6 +7,8 @@
     width: 100%;
     height: 100%;
     background-color: #fff;
+    animation-name: modalFade;
+    animation-duration: .2s;
 }
 
 .modal .modal-head {
@@ -45,4 +47,13 @@ html[aria-hidden="true"],
 body[aria-hidden="true"] {
   overflow: auto;
   height: 100%;
+}
+
+@keyframes modalFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

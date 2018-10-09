@@ -1,3 +1,9 @@
 @import "./reset";
 @import "./group_header";
 @import "./modal";
+@import "./ico_service_sprite";
+
+.service-icon {
+    display: block;
+}
+@include sprites($spritesheet-sprites);
